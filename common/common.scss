@@ -139,4 +139,14 @@ $max-width: 600px;
   span.keyword {
     color: var(--primary);
   }
+
+  .banner-main {
+    color: linear-gradient(90deg,var(--tertiary-hover) 0%,var(--tertiary) 100%);    
+  }
+  .banner-cbf {
+    color: linear-gradient(120deg, #1ba1c4 20%, #49b9ad 45%);    
+  }
+  .banner-rkfx {
+    color: linear-gradient(to right,#ec3f2a 35%,#fc7019 55%);    
+  }
 }

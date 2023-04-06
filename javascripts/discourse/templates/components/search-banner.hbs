@@ -1,7 +1,17 @@
 {{#if shouldDisplay}}
   <div class="custom-search-banner">
     <div class="wrap custom-search-banner-wrap">
-      <h1>{{html-safe (theme-i18n "search_banner.headline")}}</h1>      
+      <h1 id="banner-title">{{html-safe (theme-i18n "search_banner.headline")}}</h1>      
     </div>
   </div>
+  <script>
+    const domain = window.location.hostname;
+    const banner = document.getElementById("banner-title");
+    if(domain.includes('cbf')){
+      banner.className = "banner-cbf"
+    } else if (domain.includes('rkfx')){
+      banner.className = "banner-cbf"
+    } else {
+      banner.className = "banner-main"
+    }
 {{/if}}
